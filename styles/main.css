@@ -1,0 +1,98 @@
+/* * {
+    box-sizing: border-box;
+} */
+
+:root {
+    --font-family-raleway: 'Raleway', sans-serif;
+    --font-family-roboto: 'Roboto', sans-serif;
+    --font-weight-light: 400;
+    --font-weight-normal: 500;
+    --font-weight-bold: 700;
+
+    --font-size-xs: 12px;
+    --font-size-s: 14px;
+    --font-size-m: 16px;
+    --font-size-l: 18px;
+
+    --primary-white: #FFFFFF;
+    --primary-black: #000;
+    --primary-grey: #757575;
+    --primary-blue: #1A39A5;
+    --secondary-grey: #F9F9F9;
+    --secondary-blue: #4969DA;
+}
+
+body {
+    margin: 0;
+    font-family: var(--font-family-roboto);
+    color: var(--primary-black);
+    font-weight: var(--font-weight-light);
+    background-color: var(--primary-white);
+}
+
+.page-header {
+    font-family: var(--font-family-roboto);
+    color: var(--primary-black);
+    font-weight: var(--font-weight-bold);
+    margin-top: 64px;
+    margin-bottom: 16px;
+}
+
+.login-page {
+    overflow: hidden;
+    height:100vh;
+    width:100vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.link {
+    color: var(--primary-grey);
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.link:hover {
+    color: var(--primary-black);
+}
+
+.form-button:hover {
+    background-color: var(--secondary-blue);
+}
+
+.input-field {
+    display: block;
+    width: calc(100% - 40px);
+    height: 24px;
+    padding: 10px 20px;
+    font-size: var(--font-size-m);
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: var(--secondary-grey);
+    background-clip: padding-box;
+    border: 1px solid var(--secondary-grey);
+    border-radius: 0.25rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  }
+
+
+.text-medium {
+    font-weight: 500;
+}
+
+
+.form-button {
+    background-color: var(--primary-blue);
+    border: none;
+    color: var(--primary-white);
+    padding: 10px 40px;
+    text-align: center;
+    font-size: var(--font-size-m);
+    text-decoration: none;
+    display: inline-block;
+    max-width: fit-content;
+    width: calc(100% - 40px);
+    cursor: pointer;
+    border-radius: 30px;
+}

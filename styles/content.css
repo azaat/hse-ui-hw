@@ -1,0 +1,174 @@
+.main-content {
+    margin: 0 auto;
+    max-width: 1180px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: calc(100% - 80px);
+    height: 100%;
+  }
+
+  .cards {
+    max-width: 1180px;
+    margin: 0 auto;
+    --auto-grid-min-size: 200px;
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(auto-fill, minmax(var(--auto-grid-min-size), 1fr));
+    gap: 16px;
+  }
+
+  .login-flex-container{
+    /* border:1px solid red; */
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    .login-main-content{
+      flex:1;
+      display: flex;
+      align-items:center;
+      justify-content:center;
+      .login-form{
+        display: flex;
+        align-items:center;
+        flex-direction: column;
+        justify-content:center;
+        width: 450px;
+        height: 200px;
+        /* border:1px solid red; */
+        gap: 16px;
+        margin: 32px;
+      }
+    }
+  }
+  
+  .login-header {
+    text-align: left;
+    padding: 0 0;
+    font-weight: 700;
+    text-indent: 0;
+    margin: 4px 2px;
+    width:100%;
+  }
+
+  .login-text {
+    text-align: left;
+    padding: 0 0;
+    color: var(--primary-grey);
+    font-weight: 400;
+    text-indent: 0;
+    margin: 4px 2px;
+    width:100%;
+  }
+
+  .product-card {
+    width: 200px;
+    height: 240px;
+    
+    flex-shrink: 0;
+  }
+
+  .product-card__image {
+    display: flex;
+    width: 200px;
+    border-radius: 16px;
+
+    height: 175px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    flex-shrink: 0;
+  }
+
+  .product-card__footer {
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    justify-content:center;
+    gap: 16px;
+    padding: 16px;
+
+  }
+
+  .product-card__text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex: 1 0 0;
+  }
+
+  .product-card__add-to-cart {
+    width: 29px;
+    height: 29px;
+    flex-shrink: 0;
+
+  }
+
+  .product-in-cart {
+    max-width: 600px;
+    height: 70px;
+    padding: 16px;
+    background-color: var(--secondary-grey);
+    /* flex-shrink: 0; */
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    border-radius: 16px;
+  }
+
+  .product-in-cart:hover {
+    background-color: #F3F3F3;
+
+  }
+
+  .product-in-cart__image {
+    width: 75px;
+    height: 75px;
+    flex-shrink: 0;
+    border-radius: 8px;
+  }
+
+
+  .cart-content {
+    margin: 0 auto;
+    max-width: 1180px;
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: calc(100% - 32px);
+    height: 100%;
+  }
+
+  .product-in-cart__content-left {
+    display: flex;
+    min-width: 100px;
+    flex:  2 0 0;
+
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+  }
+
+  .product-in-cart__content-right {
+    display: flex;
+    width: 70;
+    flex-direction: column;
+    /* flex:  1 0 0; */
+
+    align-items: flex-start;
+  }
+
+  .product-card__add-to-cart:hover {
+    fill: var(--primary-grey);
+  }
+
+  .text-buttons {
+    font-size:medium;
+    font-weight: 300;
+    padding: 4px 8px;
+    border-radius: 16px;
+    background-color: var(--primary-white);
+    color: var(--primary-black);
+  }
